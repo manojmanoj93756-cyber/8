@@ -1,0 +1,9 @@
+---
+  - name: deplopy jar file
+    hosts: localhost
+    tasks:
+    - name: copy jar file
+      copy:  
+        src: target/jenkins-demo-1.0-SNAPSHOT.jar
+        dest: /mnt/c/deployment/jenkins-demo-1.0-SNAPSHOT.jar
+        unsafe_writes: yes
